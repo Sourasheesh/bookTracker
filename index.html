@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookTracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">BookTracker</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Search Books</a></li>
+        <li><a href="tbr-list.html">My TBR List</a></li>
+      </ul>
+      <button id="toggle-mode">Dark/Light</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="search-section">
+      <input type="text" id="search-box" placeholder="Enter a book name...">
+      <button id="search-btn">Search</button>
+    </section>
+
+    <section class="recommendations-section">
+      <h2>Similar Books:</h2>
+      <ul id="recommendations-list">
+        <!-- Recommendations will be dynamically added here -->
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>Powered by Google Books API</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="toggle.js"></script>
+</body>
+</html>

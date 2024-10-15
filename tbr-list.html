@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To Be Read List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">BookTracker</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Search Books</a></li>
+        <li><a href="tbr-list.html">My TBR List</a></li>
+      </ul>
+      <button id="toggle-mode">Dark/Light</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="tbr-section">
+      <h2>Your TBR List</h2>
+      <ul id="tbr-list">
+        <!-- Books will be added dynamically here -->
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>Powered by Local Storage</p>
+  </footer>
+
+  <script src="tbr-script.js"></script>
+  <script src="toggle.js"></script> <!-- Include the toggle script -->
+</body>
+</html>

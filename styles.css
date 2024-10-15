@@ -1,0 +1,344 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Navigation Bar Styles */
+  .navbar {
+    background-color: #364fc7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar-brand h1 {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-menu li {
+    display: inline;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-menu a.active, 
+  .navbar-menu a:hover {
+    background-color: #576bdb;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #364fc7;
+    margin-bottom: 20px;
+  }
+  
+  .search-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #search-box {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #search-btn {
+    padding: 10px 20px;
+    background-color: #364fc7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #search-btn:hover {
+    background-color: #576bdb;
+  }
+  
+  /* Recommendations Section */
+  .recommendations-section {
+    margin-top: 40px;
+  }
+  
+  #recommendations-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  #recommendations-list li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recommendations-list img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #recommendations-list h3 {
+    margin: 10px 0;
+    color: #364fc7;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #666;
+  }
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover, .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Book details inside the modal */
+  #book-details h2 {
+    color: #364fc7;
+  }
+  
+  #book-details img {
+    width: 150px;
+    height: auto;
+  }
+  
+  #book-details p {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+/* Add to TBR Button */
+.add-to-tbr-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .add-to-tbr-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* TBR Section Styling */
+  .tbr-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tbr-section h2 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  #tbr-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #tbr-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  #tbr-list li img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  #tbr-list li h3 {
+    flex: 1;
+  }
+  
+  #tbr-list li button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #tbr-list li button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+
+  /* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode .navbar {
+  background-color: #555;
+}
+
+.dark-mode .navbar a {
+  color: #f9f9f9;
+}
+
+.dark-mode .navbar button {
+  background-color: #007bff;
+}
+
+.dark-mode .navbar button:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode .tbr-section {
+  background-color: #444;
+}
+
+.dark-mode footer {
+  background-color: #222;
+  color: #aaa;
+}
+/* Existing styles... */
+
+/* Circular button styling */
+#toggle-mode {
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 50%; /* Make it circular */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+#toggle-mode:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Additional dark mode adjustments if needed */
+.dark-mode #toggle-mode {
+  background-color: #0056b3; /* Adjust background color for dark mode */
+}
